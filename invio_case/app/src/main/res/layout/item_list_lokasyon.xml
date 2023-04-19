@@ -7,8 +7,10 @@
     android:layout_height="wrap_content"
     card_view:contentPadding="8dp"
     card_view:cardCornerRadius="8dp"
+    card_view:strokeColor="@color/purple_sahadow"
+    card_view:strokeWidth="4dp"
     card_view:cardElevation="8dp"
-    card_view:cardBackgroundColor="@color/black"
+    card_view:cardBackgroundColor="@color/soft_black"
     android:layout_margin="1dp"
     >
 

@@ -21,12 +21,12 @@ class SplashActivity : AppCompatActivity() {
 
         if (!file.exists()) {
             // uygulama ilk kez açılıyor
-            txtSaplash.text = "Welcome"
+            txtSaplash.text = "Welcome!"
             file.createNewFile()
         }
         else {
             // uygulama daha önce açılmıştı
-            txtSaplash.text = "Hello"
+            txtSaplash.text = "Hello!"
         }
 
        // txtSaplash.text = "Merhaba"

@@ -1,37 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@color/soft_black"
     tools:context=".ui.fragment.detail.DetailFragment">
 
-    <FrameLayout
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
+            <ImageView
+                android:id = "@+id/img_back_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_back_arrow"
+                />
+            <TextView
+                android:id = "@+id/txt_name_character"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/avenir_black"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="Name"
+                />
+
+        </LinearLayout>
+
         <ImageView
             android:id = "@+id/imgCharacters"
-            android:layout_width="match_parent"
+            android:gravity = "center"
+            android:layout_width="275dp"
             android:layout_height="275dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
             android:src="@drawable/ic_launcher_foreground"
-            android:adjustViewBounds="true" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="275dp"
-            android:background="@drawable/shadow" />
-    </FrameLayout>
+            />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
         >
         <TextView
             android:id = "@+id/labelDetailStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
             android:fontFamily="@font/avenir_black"
             android:textSize="22sp"
             android:text="Satatus :" />
@@ -39,7 +72,9 @@
             android:id = "@+id/txtDetailStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
             android:fontFamily="@font/avenir_book"
+            android:textColor="@color/white"
             android:textSize="22sp"
             android:text="Satatus" />
     </LinearLayout>
@@ -48,18 +83,25 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         >
         <TextView
             android:id = "@+id/labelDetailGender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:fontFamily="@font/avenir_black"
+            android:textColor="@color/white"
             android:textSize="22sp"
             android:text="Gender :" />
         <TextView
             android:id = "@+id/txtDetailGender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
             android:fontFamily="@font/avenir_book"
             android:textSize="22sp"
             android:text="Gender" />
@@ -69,11 +111,16 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         >
         <TextView
             android:id = "@+id/labelDetailSpecies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
             android:fontFamily="@font/avenir_black"
             android:textSize="22sp"
             android:text="Species :" />
@@ -81,7 +128,9 @@
             android:id = "@+id/txtDetailSpecies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
             android:fontFamily="@font/avenir_book"
+            android:textColor="@color/white"
             android:textSize="22sp"
             android:text="Gender" />
     </LinearLayout>
@@ -90,11 +139,16 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         >
         <TextView
             android:id = "@+id/labelDetailOrigin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
             android:fontFamily="@font/avenir_black"
             android:textSize="22sp"
             android:text="Origin :" />
@@ -102,6 +156,8 @@
             android:id = "@+id/txtDetailOrigin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"
             android:fontFamily="@font/avenir_book"
             android:textSize="22sp"
             android:text="Origin" />
@@ -111,18 +167,25 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:fontFamily="@font/avenir_black"
+            android:textColor="@color/white"
             android:textSize="22sp"
             android:text="Location :" />
         <TextView
             android:id = "@+id/txtDetailLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
             android:fontFamily="@font/avenir_book"
+            android:textColor="@color/white"
             android:textSize="22sp"
             android:text="Location" />
     </LinearLayout>
@@ -131,10 +194,15 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
             android:fontFamily="@font/avenir_black"
             android:textSize="22sp"
             android:text="Episode :" />
@@ -142,7 +210,9 @@
             android:id = "@+id/txtDetailEpisode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:fontFamily="@font/avenir_book"
+            android:layout_marginEnd="20dp"
             android:textSize="22sp"
             android:text="Episode" />
     </LinearLayout>
@@ -151,10 +221,15 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
             android:fontFamily="@font/avenir_black"
             android:textSize="22sp"
             android:text="Created at\n(In API) : " />
@@ -162,9 +237,12 @@
             android:id = "@+id/txtDetailCreated"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:fontFamily="@font/avenir_book"
+            android:layout_marginEnd="20dp"
             android:textSize="22sp"
             android:text="Location" />
     </LinearLayout>
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

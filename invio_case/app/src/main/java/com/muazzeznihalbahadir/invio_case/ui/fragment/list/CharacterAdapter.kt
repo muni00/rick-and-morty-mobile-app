@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.item_list.view.*
 class CharacterAdapter: RecyclerView.Adapter<CharacterAdapter.CharacterViewHolder>() {
 
     private var listKarakter = emptyList<Karakter>()
+
     class CharacterViewHolder(private val binding: ItemListBinding):RecyclerView.ViewHolder(binding.root){
         fun bind(karakter : Karakter){
             binding.txtIdCharacter.text = karakter.id.toString()
@@ -36,13 +37,8 @@ class CharacterAdapter: RecyclerView.Adapter<CharacterAdapter.CharacterViewHolde
     }
 
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
-
         holder.bind(listKarakter[position])
-
         setGenderIcon(position, holder)
-
-
-
     }
 
     private fun setGenderIcon(position: Int, holder: CharacterViewHolder) {

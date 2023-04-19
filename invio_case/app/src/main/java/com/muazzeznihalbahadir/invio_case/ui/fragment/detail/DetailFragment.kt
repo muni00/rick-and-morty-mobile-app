@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.muazzeznihalbahadir.invio_case.R
 import com.muazzeznihalbahadir.invio_case.databinding.FragmentDetailBinding
 import com.muazzeznihalbahadir.invio_case.model.Karakter
 import com.squareup.picasso.Picasso
@@ -34,7 +36,7 @@ class DetailFragment : Fragment() {
         val character = args.character
 
         binding.apply {
-            //
+            binding.txtNameCharacter.text = character.name
             Picasso.get().load(character.image).fit().centerCrop().into(binding.imgCharacters)
             binding.txtDetailStatus.text = character.status
             binding.txtDetailGender.text = character.gender
@@ -46,7 +48,14 @@ class DetailFragment : Fragment() {
             val outputDate = timeConvert(character)
             binding.txtDetailCreated.text = outputDate
         }
+
+        binding.imgBackButton.setOnClickListener {
+            val navController = findNavController()
+            navController.navigateUp()
+        }
     }
+
+
 
     private fun timeConvert(character: Karakter): String? {
         val inputDate = character.created

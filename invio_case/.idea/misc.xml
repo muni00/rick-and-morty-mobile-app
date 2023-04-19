@@ -8,8 +8,9 @@
         <entry key="..\:/Kotlin/invio_case/app/src/main/res/layout/activity_main.xml" value="0.1598731884057971" />
         <entry key="..\:/Kotlin/invio_case/app/src/main/res/layout/activity_splash.xml" value="0.18" />
         <entry key="..\:/Kotlin/invio_case/app/src/main/res/layout/fragment_detail.xml" value="0.25" />
-        <entry key="..\:/Kotlin/invio_case/app/src/main/res/layout/fragment_list.xml" value="0.16614583333333333" />
-        <entry key="..\:/Kotlin/invio_case/app/src/main/res/layout/item_list.xml" value="0.1" />
+        <entry key="..\:/Kotlin/invio_case/app/src/main/res/layout/fragment_filter.xml" value="0.17708333333333334" />
+        <entry key="..\:/Kotlin/invio_case/app/src/main/res/layout/fragment_list.xml" value="0.21" />
+        <entry key="..\:/Kotlin/invio_case/app/src/main/res/layout/item_list.xml" value="0.25" />
         <entry key="..\:/Kotlin/invio_case/app/src/main/res/layout/item_list_lokasyon.xml" value="0.1766304347826087" />
       </map>
     </option>

@@ -13,9 +13,6 @@
         <action
             android:id="@+id/action_listFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
-        <action
-            android:id="@+id/action_listFragment_to_filterFragment"
-            app:destination="@id/filterFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
@@ -26,9 +23,5 @@
             android:name="character"
             app:argType="com.muazzeznihalbahadir.invio_case.model.Karakter" />
     </fragment>
-    <fragment
-        android:id="@+id/filterFragment"
-        android:name="com.muazzeznihalbahadir.invio_case.ui.fragment.filter.FilterFragment"
-        android:label="fragment_filter"
-        tools:layout="@layout/fragment_filter" />
+
 </navigation>
