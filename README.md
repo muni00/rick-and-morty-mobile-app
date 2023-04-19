@@ -20,3 +20,4 @@ karakterleri listeleyebilir. Ayrıca, karakterlerin detay sayfalarına da gidile
    
   </tr>
  </table>
+### Uygulama Test Videosu
