@@ -20,4 +20,6 @@ karakterleri listeleyebilir. Ayrıca, karakterlerin detay sayfalarına da gidile
    
   </tr>
  </table>
-### Uygulama Test Videosu
+###Uygulama Test Videosu
+
+<video src='https://user-images.githubusercontent.com/58309495/233104328-7a3b3ba8-dc9e-4a35-961a-55ec3a3c293d.mp4'/>
